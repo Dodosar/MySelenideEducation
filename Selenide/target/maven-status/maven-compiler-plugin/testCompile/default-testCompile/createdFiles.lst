@@ -1,0 +1,3 @@
+org\selenide\CookieLogIn.class
+org\selenide\Http.class
+org\selenide\GoogleTest.class

@@ -1,0 +1,1 @@
+{"uuid":"da4b146c-82e3-40e6-a41a-fe818c22206d","name":"org.selenide.GoogleTest.setBrowser","description":"","start":1594120834512,"stop":1594120834523,"children":["43e81435-8a60-40df-91b8-18c148b8f7a3"],"befores":[{"name":"setBrowser","status":"passed","stage":"finished","description":"","start":1594120834512,"stop":1594120834522}]}
