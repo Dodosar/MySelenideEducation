@@ -2,15 +2,15 @@
 <testng-results total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-07-21T19:17:47Z" name="Default suite" finished-at="2020-07-21T19:20:01Z" duration-ms="133728">
+  <suite started-at="2020-07-21T19:27:17Z" name="Default suite" finished-at="2020-07-21T19:28:37Z" duration-ms="80461">
     <groups>
     </groups>
-    <test started-at="2020-07-21T19:17:47Z" name="Default test" finished-at="2020-07-21T19:20:01Z" duration-ms="133728">
+    <test started-at="2020-07-21T19:27:17Z" name="Default test" finished-at="2020-07-21T19:28:37Z" duration-ms="80461">
       <class name="org.selenide.GoogleTest">
-        <test-method signature="userCanSearchKeywordWithGoogle()[pri:0, instance:org.selenide.GoogleTest@4992613f]" started-at="2020-07-21T22:17:47Z" name="userCanSearchKeywordWithGoogle" finished-at="2020-07-21T22:20:01Z" duration-ms="133514" status="FAIL">
+        <test-method signature="userCanSearchKeywordWithDemoGuru99()[pri:0, instance:org.selenide.GoogleTest@14bf57b2]" started-at="2020-07-21T22:27:17Z" name="userCanSearchKeywordWithDemoGuru99" finished-at="2020-07-21T22:28:37Z" duration-ms="80256" status="FAIL">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:6432
+              <![CDATA[java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:22810
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'TYUDM', ip: '192.168.1.154', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '11.0.5'
 Driver info: driver.version: SelenideDriver
@@ -18,7 +18,7 @@ selenide.url: http://www.demo.guru99.com/V4
 selenide.baseUrl: http://localhost:8080]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:6432
+              <![CDATA[org.openqa.selenium.WebDriverException: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:22810
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'TYUDM', ip: '192.168.1.154', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '11.0.5'
 Driver info: driver.version: SelenideDriver
@@ -32,7 +32,7 @@ selenide.baseUrl: http://localhost:8080
 	at com.codeborne.selenide.drivercommands.Navigator.open(Navigator.java:28)
 	at com.codeborne.selenide.SelenideDriver.open(SelenideDriver.java:76)
 	at com.codeborne.selenide.Selenide.open(Selenide.java:48)
-	at org.selenide.GoogleTest.userCanSearchKeywordWithGoogle(GoogleTest.java:46)
+	at org.selenide.GoogleTest.userCanSearchKeywordWithDemoGuru99(GoogleTest.java:46)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -57,7 +57,7 @@ selenide.baseUrl: http://localhost:8080
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:6432
+Caused by: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:22810
 	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:247)
 	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)
 	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
@@ -96,7 +96,7 @@ Caused by: java.net.ConnectException: Connection refused: connect
           </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- userCanSearchKeywordWithGoogle -->
+        </test-method> <!-- userCanSearchKeywordWithDemoGuru99 -->
       </class> <!-- org.selenide.GoogleTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

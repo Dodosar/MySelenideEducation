@@ -7,6 +7,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.codeborne.selenide.Configuration;
@@ -40,7 +41,8 @@ public class GoogleTest {
 	}*/
 
 	@Test
-	public void userCanSearchKeywordWithGoogle() {
+	public void userCanSearchKeywordWithDemoGuru99() {
+		Configuration.remote = "http://localhost:4444/wd/hub";
 		Configuration.headless = true;
 		Configuration.browserSize = "1920x1080";
 		open("http://www.demo.guru99.com/V4");		
@@ -55,6 +57,11 @@ public class GoogleTest {
 		.shouldHave(text("Welcome To Manager's Page of Guru99 Bank"),text("Welcome To Manager's Page of Guru99 Bank"));
 		SelenideElement a = $(By.xpath("//*[@class='heading3']"));
 				a.should(exist);
+		
+	}
+	@Parameters({})
+	@Test
+	public void CreateNewCustomer() {
 		
 	}
 }
