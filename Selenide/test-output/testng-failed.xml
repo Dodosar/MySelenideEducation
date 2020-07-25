@@ -5,7 +5,7 @@
     <classes>
       <class name="org.selenide.GoogleTest">
         <methods>
-          <include name="userCanSearchKeywordWithGoogle"/>
+          <include name="userCanSearchKeywordWithDemoGuru99"/>
         </methods>
       </class> <!-- org.selenide.GoogleTest -->
     </classes>
