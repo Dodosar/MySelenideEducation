@@ -43,25 +43,28 @@ public class GoogleTest {
 	@Test
 	public void userCanSearchKeywordWithDemoGuru99() {
 		Configuration.remote = "http://localhost:4444/wd/hub";
-		Configuration.headless = true;
+		//Configuration.headless = true;
 		Configuration.browserSize = "1920x1080";
 		open("http://www.demo.guru99.com/V4");		
 		$(By.name("uid")).setValue("mngr271609");
 		$(By.name("password")).setValue("YzunEzA");
 		$(By.xpath("//*[@type='submit']")).click();
-		//Configuration.browser = Driver.class.getName();
-
-		/*driver =  WebDriverRunner.driver().getWebDriver();
-		StoreCookieInfo.StoreCookie(driver); */
 		$(By.xpath("//*[@class='heading3']"))
 		.shouldHave(text("Welcome To Manager's Page of Guru99 Bank"),text("Welcome To Manager's Page of Guru99 Bank"));
 		SelenideElement a = $(By.xpath("//*[@class='heading3']"));
 				a.should(exist);
 		
 	}
-	@Parameters({})
+	
+
 	@Test
 	public void CreateNewCustomer() {
+		Configuration.remote = "http://localhost:4444/wd/hub";
+		Configuration.browserSize = "1920x1080";
+		open("https://www.seleniumeasy.com/test/bootstrap-modal-demo.html");
+		$(By.xpath("//*[.='Single Modal Example']/following-sibling::div[@class='panel-body']//a[@data-toggle='modal' and .='Launch modal']")).click();
+		$(By.xpath("//*[@id=\"myModal0\"]//a[2]")).click();
+		$(By.xpath("//*[.='Multiple Modal Example']/following-sibling::div[@class='panel-body']//a[@data-toggle='modal' and .='Launch modal']")).click();
 		
 	}
 }
